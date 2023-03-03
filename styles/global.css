@@ -1,0 +1,67 @@
+:root{
+    /* color theme */
+    --bg-color: 229,231,235;
+    --block-color: 35,41,53;
+    --hightlight-color: 77,70,212;
+
+    /* font theme */
+    --header-size: 36px;
+    --title-size: 30px;
+    --paragraph-size: 20px;
+}
+
+*{
+    display: block;
+}
+
+html,
+body{
+    margin: 0;
+    padding: 0;
+
+    background-color: rgb(var(--bg-color));
+}
+
+ul{
+    list-style:none;
+    padding-left:0px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header,
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    background-color: rgb(var(--block-color));
+    height: 70px;
+}
+
+header div{
+    width: 1440px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.chapter li{
+    color: white;
+}
+
+.chapter li::after{
+    content: "";
+    margin-right: 30px;
+}
+
+@media (hover: hover) {
+    .chapter li:hover {
+        color: rgb(var(--hightlight-color));
+    }
+  }
